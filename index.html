@@ -1,13 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Buzz Tracker</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BuzzTracker – Track Your Buzz, Understand Your Terpenes</title>
+  <meta name="description" content="BuzzTracker helps you log cannabis strains, track how they make you feel, and understand which terpenes actually work best for your body.">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="assets/buzztracker-logo.png" />
 </head>
 <body>
-  <h1>Buzz Tracker</h1>
-  <p>This site hosts the Buzz Tracker Privacy Policy.</p>
-  <p><a href="privacy.html">View Privacy Policy</a></p>
+  <header class="bt-header">
+    <div class="bt-container bt-nav">
+      <div class="bt-brand">
+        <img src="assets/buzztracker-logo.png" alt="BuzzTracker logo" class="bt-logo" />
+        <span class="bt-brand-name">BuzzTracker</span>
+      </div>
+      <nav class="bt-nav-links">
+        <a href="#features">Features</a>
+        <a href="#terpenes">Terpenes</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="bt-hero">
+    <div class="bt-container bt-hero-inner">
+      <div class="bt-hero-text">
+        <h1>Track your buzz. <span class="bt-highlight">Understand your terpenes.</span></h1>
+        <p class="bt-hero-subtitle">
+          BuzzTracker is your personal cannabis journal. Log strains, rate how they make you feel,
+          and discover which terpenes actually work best for <strong>your</strong> body.
+        </p>
+
+        <div class="bt-hero-ctas">
+          <a href="#" class="bt-store-badge bt-playstore">Get it on Google Play</a>
+          <a href="#" class="bt-store-badge bt-appstore">Coming soon to iOS</a>
+        </div>
+
+        <ul class="bt-hero-bullets">
+          <li>⭐ Log strains & effects in seconds</li>
+          <li>🧪 See real terpene profiles, not just “Indica” or “Sativa”</li>
+          <li>📊 Get insights like “Top terpenes for pain relief”</li>
+        </ul>
+      </div>
+
+      <div class="bt-hero-media">
+        <div class="bt-phone-frame">
+          <img src="assets/screenshot-main.png" alt="BuzzTracker app screenshot" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="bt-section bt-section-alt">
+    <div class="bt-container">
+      <h2 class="bt-section-title">What BuzzTracker does for you</h2>
+      <p class="bt-section-subtitle">
+        More than a strain list. BuzzTracker helps you connect the dots between
+        <strong>what you smoke</strong> and <strong>how you feel</strong>.
+      </p>
+
+      <div class="bt-grid">
+        <div class="bt-card">
+          <h3>📝 Simple Buzz Logs</h3>
+          <p>
+            Pick your strain, log your session, and slide a few sliders for things like
+            pain relief, anxiety relief, couch-lock, focus, and mood. It feels more like
+            a quick check-in than homework.
+          </p>
+        </div>
+
+        <div class="bt-card">
+          <h3>🧬 Terpene-aware, not just strain names</h3>
+          <p>
+            BuzzTracker doesn’t stop at “Hybrid” or a catchy strain name. It looks at the
+            <strong>terpene profile</strong> so you can see patterns like “Limonene + Caryophyllene
+            usually help my mood and pain.”
+          </p>
+        </div>
+
+        <div class="bt-card">
+          <h3>📊 Personal insights & reports</h3>
+          <p>
+            Over time, your log history turns into reports: your top strains for pain relief,
+            the terpenes that show up when your anxiety scores drop, and which products
+            just don’t work for you.
+          </p>
+        </div>
+
+        <div class="bt-card">
+          <h3>📷 Label & QR friendly workflow</h3>
+          <p>
+            BuzzTracker is designed to play nicely with modern dispensary labels and QR codes,
+            so you can quickly match products to their terpene profiles without digging through
+            paper COAs every time.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TERPENES EDUCATION -->
+  <section id="terpenes" class="bt-section">
+    <div class="bt-container">
+      <h2 class="bt-section-title">What are terpenes, and why should you care?</h2>
+      <p class="bt-section-subtitle">
+        Terpenes are aromatic compounds found in cannabis (and lots of other plants) that
+        contribute to <strong>how a strain actually feels</strong> – not just how it smells.
+      </p>
+
+      <div class="bt-terp-grid">
+        <article class="bt-terp-card">
+          <h3>Limonene 🍋</h3>
+          <p>
+            Often associated with uplifted mood, energy, and a brighter headspace.
+            Common in “daytime” strains and citrus-smelling flower.
+          </p>
+          <p class="bt-terp-tag">You might like it for: mood, motivation</p>
+        </article>
+
+        <article class="bt-terp-card">
+          <h3>Myrcene 🌿</h3>
+          <p>
+            Linked with relaxation and “heavy body” effects. Frequently found in strains
+            people use for sleep or couch-lock style relief.
+          </p>
+          <p class="bt-terp-tag">You might like it for: deep relaxation, sleep</p>
+        </article>
+
+        <article class="bt-terp-card">
+          <h3>Beta-Caryophyllene 🌶️</h3>
+          <p>
+            A spicy, peppery terpene that interacts with your endocannabinoid system and
+            is often mentioned in strains used for pain and inflammation.
+          </p>
+          <p class="bt-terp-tag">You might like it for: pain, stress</p>
+        </article>
+
+        <article class="bt-terp-card">
+          <h3>Pinene 🌲</h3>
+          <p>
+            Found in pine trees and some cannabis strains, pinene is often tied to alertness
+            and a more “clear headed” feel.
+          </p>
+          <p class="bt-terp-tag">You might like it for: focus, clarity</p>
+        </article>
+      </div>
+
+      <div class="bt-terp-footer">
+        <p>
+          BuzzTracker doesn’t just show you terpene buzzwords – it helps you learn
+          <strong>which combinations actually line up with your best experiences</strong>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how-it-works" class="bt-section bt-section-alt">
+    <div class="bt-container">
+      <h2 class="bt-section-title">How BuzzTracker works</h2>
+
+      <div class="bt-steps">
+        <div class="bt-step">
+          <span class="bt-step-number">1</span>
+          <div>
+            <h3>Log your session</h3>
+            <p>
+              Open BuzzTracker, pick your strain (or add a new one), and quickly rate
+              the effects you care about: pain relief, anxiety, sleep, focus, etc.
+            </p>
+          </div>
+        </div>
+
+        <div class="bt-step">
+          <span class="bt-step-number">2</span>
+          <div>
+            <h3>Let the app track the details</h3>
+            <p>
+              Each log is connected to terpene data, THC range, and strain type.
+              You don’t have to be a scientist – the app keeps track of the nerdy stuff for you.
+            </p>
+          </div>
+        </div>
+
+        <div class="bt-step">
+          <span class="bt-step-number">3</span>
+          <div>
+            <h3>See patterns & recommendations</h3>
+            <p>
+              Over time, you’ll see patterns like “linalool + myrcene = great sleep nights”
+              or “these three strains don’t help my anxiety at all.” Use that to choose
+              better products next time you visit a dispensary.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bt-screens-row">
+        <div class="bt-phone-frame small">
+          <img src="assets/screenshot-terpenes.png" alt="BuzzTracker terpene screen" />
+        </div>
+        <div class="bt-phone-frame small">
+          <img src="assets/screenshot-reports.png" alt="BuzzTracker reports screen" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="bt-section">
+    <div class="bt-container">
+      <h2 class="bt-section-title">Frequently Asked Questions</h2>
+
+      <div class="bt-faq">
+        <details>
+          <summary>Is BuzzTracker a dispensary or does it sell cannabis?</summary>
+          <p>
+            No. BuzzTracker is a <strong>tracking and education app</strong>. It helps you
+            make sense of your own experiences with legal cannabis products. It doesn’t
+            sell or deliver cannabis.
+          </p>
+        </details>
+
+        <details>
+          <summary>Do I have to understand terpenes to use the app?</summary>
+          <p>
+            Not at all. Just log your sessions and rate how you feel. BuzzTracker quietly
+            connects that back to terpene data and shows you easy-to-read insights over time.
+          </p>
+        </details>
+
+        <details>
+          <summary>Does BuzzTracker share my personal data?</summary>
+          <p>
+            BuzzTracker is built for <strong>personal use</strong>. Check out the
+            Privacy Policy hosted on this site for full details on what is and isn’t collected.
+          </p>
+        </details>
+
+        <details>
+          <summary>Is there a subscription?</summary>
+          <p>
+            BuzzTracker is free to download, with optional premium features like expanded
+            strain lists and deeper insights. Pricing and features may vary by platform
+            and region.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="bt-section bt-cta">
+    <div class="bt-container bt-cta-inner">
+      <div>
+        <h2>Ready to take control of your buzz?</h2>
+        <p>
+          Stop guessing. Start tracking. Let BuzzTracker show you which terpenes and strains
+          actually work best for you.
+        </p>
+      </div>
+      <div class="bt-hero-ctas">
+        <a href="#" class="bt-store-badge bt-playstore">Get it on Google Play</a>
+        <a href="#" class="bt-store-badge bt-appstore">Coming soon to iOS</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bt-footer">
+    <div class="bt-container bt-footer-inner">
+      <span>© <span id="bt-year"></span> BuzzTracker. All rights reserved.</span>
+      <a href="/privacy-policy">Privacy Policy</a>
+    </div>
+  </footer>
+
+  <script>
+    // Set current year in footer
+    document.getElementById('bt-year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
